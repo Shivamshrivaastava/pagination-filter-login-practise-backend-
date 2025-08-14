@@ -56,7 +56,7 @@ app.post('/login', (req, res) => {
 
 // ---------------- PAGINATION + SEARCH ----------------
 
-// GET items with optional search & pagination
+// GET items with  search & pagination
 app.get('/items', (req, res) => {
   let { search = '', page = 1, limit = 5 } = req.query;
   page = parseInt(page);
@@ -81,3 +81,4 @@ app.get('/items', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
+
